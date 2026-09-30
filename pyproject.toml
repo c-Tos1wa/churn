@@ -1,0 +1,21 @@
+[project]
+name = "cancelation"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "cti",email = "cristoshiwassaki@Gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jupyterlab (>=4.6.4,<5.0.0)",
+    "pandas (>=3.0.6,<4.0.0)",
+    "plotly (>=7.1.0,<8.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "cancelation", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
